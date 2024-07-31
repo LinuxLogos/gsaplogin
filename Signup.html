@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Linux Logos.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="animation.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <section class="register">
+      <div class="sig_log">
+        <p><a href="Signup.html" class="underliner">Sign Up</a></p>
+        <p><a href="Login.html" class="underliner">Login</a></p>
+      </div>
+      <form action="" method="post">
+        <input
+          type="text"
+          name="first_last"
+          id="first_last"
+          required
+          autofocus
+          placeholder="First and Last name"
+        />
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          autofocus
+          placeholder="Email"
+        />
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          autofocus
+          placeholder="Password"
+        />
+
+        <div class="agree">
+          <p class="privacy">
+            <input type="checkbox" name="checkbox" id="check" />
+            <i>I Agree with <span>Privacy</span> and <span>Policy</span></i>
+          </p>
+        </div>
+
+        <input type="submit" value="Register" required autofocus id="submit" />
+      </form>
+
+      <div class="signwithother">
+        <h6 id="signwithother">Or Sign in with</h6>
+
+        <ul>
+          <li>
+            <a href="# "><img src="google.png" alt="Logo google" /></a>
+          </li>
+          <li>
+            <a href=""><img src="facebook.png" alt="Logo facebook" /></a>
+          </li>
+          <li>
+            <a href=""><img src="twiter.png" alt="Logo X" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="logo">
+      <p><img src="Linux Logos.png" alt="Linux logos" /></p>
+    </section>
+  </body>
+</html>
