@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="Linux Logos.png" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="animation.js"></script>
     <title>Sign Up</title>
   </head>
-  <body>
-    <section class="register">
-      <div class="sig_log">
-        <p><a href="Signup.html" class="underliner">Sign Up</a></p>
-        <p><a href="Login.html" class="underliner">Login</a></p>
+  <body class="bg-custom-bg1 flex md:flex-row flex-col-reverse justify-between">
+    <section id="register-section" class="register bg-custom-bg h-screen md:w-[55%] w-full md:rounded-r-[100px] rounded-none md:px-[5%] p-4 text-white md:h-screen h-auto" style="background: linear-gradient(-90deg, #45526f, #3e4657);">
+      <div class="sig_log flex md:flex-row flex-col md:items-start items-center my-[10%]">
+        <p class="md:m-[2%_15%] my-[1%]"><a href="Signup.html" class="underliner no-underline text-white font-['Segoe_Script'] text-2xl relative hover:underline">Sign Up</a></p>
+        <p class="md:m-[2%_15%] my-[1%]"><a href="Login.html" class="underliner no-underline text-white font-['Segoe_Script'] text-2xl relative hover:underline">Login</a></p>
       </div>
-      <form action="" method="post">
+      <form action="" method="post" class="relative md:mx-[20%] mx-[5%]">
         <input
           type="text"
           name="first_last"
@@ -23,6 +23,7 @@
           required
           autofocus
           placeholder="First and Last name"
+          class="h-[4.5vh] md:h-[4.5vh] h-[5vh] w-full border-none md:my-5 my-2.5 text-center rounded-lg text-black"
         />
 
         <input
@@ -32,6 +33,7 @@
           required
           autofocus
           placeholder="Email"
+          class="h-[4.5vh] md:h-[4.5vh] h-[5vh] w-full border-none md:my-5 my-2.5 text-center rounded-lg text-black"
         />
 
         <input
@@ -41,36 +43,37 @@
           required
           autofocus
           placeholder="Password"
+          class="h-[4.5vh] md:h-[4.5vh] h-[5vh] w-full border-none md:my-5 my-2.5 text-center rounded-lg text-black"
         />
 
-        <div class="agree">
-          <p class="privacy">
-            <input type="checkbox" name="checkbox" id="check" />
-            <i>I Agree with <span>Privacy</span> and <span>Policy</span></i>
+        <div id="agree-section" class="agree flex items-center justify-center my-7">
+          <p class="privacy flex justify-center items-center">
+            <input type="checkbox" name="checkbox" id="check" class="border-none rounded-lg accent-custom-validate h-[2vh] w-[2vh] mx-2.5" />
+            <i>I Agree with <span class="text-[#9a3737]">Privacy</span> and <span class="text-[#9a3737]">Policy</span></i>
           </p>
         </div>
 
-        <input type="submit" value="Register" required autofocus id="submit" />
+        <input type="submit" value="Register" required autofocus id="submit" class="bg-custom-validate border-none my-12 text-custom-bg1 h-[7vh] w-full text-center rounded-lg" />
       </form>
 
-      <div class="signwithother">
-        <h6 id="signwithother">Or Sign in with</h6>
+      <div class="signwithother md:mt-4 mt-2 text-center">
+        <h6 id="signwithother" class="text-base font-['Times_New_Roman']">Or Sign in with</h6>
 
-        <ul>
-          <li>
-            <a href="# "><img src="google.png" alt="Logo google" /></a>
+        <ul class="my-5 flex md:flex-row flex-col justify-center items-center">
+          <li class="md:mx-1 my-1">
+            <a href="# "><img src="google.png" alt="Logo google" class="md:w-[30px] w-[25px] md:h-[30px] h-[25px]" /></a>
           </li>
-          <li>
-            <a href=""><img src="facebook.png" alt="Logo facebook" /></a>
+          <li class="md:mx-1 my-1">
+            <a href=""><img src="facebook.png" alt="Logo facebook" class="md:w-[30px] w-[25px] md:h-[30px] h-[25px]" /></a>
           </li>
-          <li>
-            <a href=""><img src="twiter.png" alt="Logo X" /></a>
+          <li class="md:mx-1 my-1">
+            <a href=""><img src="twiter.png" alt="Logo X" class="md:w-[30px] w-[25px] md:h-[30px] h-[25px]" /></a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="logo">
-      <p><img src="Linux Logos.png" alt="Linux logos" /></p>
+    <section id="logo-section" class="logo md:w-[45%] w-full bg-custom-bg1 flex justify-center items-center md:p-0 p-4 md:mt-0 mt-4">
+      <p><img src="Linux Logos.png" alt="Linux logos" class="md:w-[50vh] w-[30vh] md:h-[50vh] h-[30vh] object-cover" style="animation: rotateAnimation 20s infinite linear;" /></p>
     </section>
   </body>
 </html>

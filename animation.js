@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.to(".register", { opacity: 1, duration: 1, delay: 0.5 });
-  gsap.to(".logo", { opacity: 1, duration: 1, delay: 1 });
+  gsap.to("#register-section", { opacity: 1, duration: 1, delay: 0.5 });
+  gsap.to("#logo-section", { opacity: 1, duration: 1, delay: 1 });
 
-  gsap.from(".logo img", {
+  gsap.from("#logo-section img", {
     scale: 0,
     rotation: 360,
     duration: 1.5,
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "back.out(1.7)",
   });
 
-  gsap.from(".agree", {
+  gsap.from("#agree-section", {
     opacity: 0,
     duration: 1,
     delay: 2.5,
